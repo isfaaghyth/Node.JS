@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %} Halaman Index {% endblock %}
+
+{% block content %}
+<h2>Tambah Data Mahasiswa</h2>
+<form method="POST">
+	<table>
+		<tr>
+			<td><label>NIM: </label></td>
+			<td><input type="text" name="no_induk"></td>
+		</tr>
+		<tr>
+			<td><label>Nama: </label></td>
+			<td><input type="text" name="nama"></td>
+		</tr>
+		<tr>
+			<td><label>Alamat: </label></td>
+			<td><input type="text" name="alamat"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Simpan"></td>
+		</tr>
+	</table>
+</form>
+{% endblock %}
